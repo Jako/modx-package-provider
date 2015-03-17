@@ -361,7 +361,7 @@ switch ($path) {
         break;
 
     default:
-        echo <<<'HTML'
+        echo <<<HTML
 <h1>Basic package repository</h1>
 <p>This is a onepage MODX package repository implementation.</p>
 <h2>Relevant MODX REST calls</h2>
@@ -370,8 +370,8 @@ switch ($path) {
     <li><a href="home">home</a> (display repo welcome page)</li>
     <li><a href="repository">repository</a> (read repository tree and tags)</li>
     <li><a href="package">package</a> (read packages in repo or by tag)</li>
-    <li><a href="package?signature=<?php echo $packages[1]["signature"] ?>">package?signature=</a> (specific package)</li>
-    <li><a href="package/update?signature=<?php echo $packages[1]["signature"] ?>">package/update</a> (check updates)</li>
+    <li><a href="package?signature={$packages[0]['signature']}">package?signature=</a> (specific package)</li>
+    <li><a href="package/update?signature={$packages[0]['signature']}">package/update</a> (check updates)</li>
 </ul>
 HTML;
         break;
