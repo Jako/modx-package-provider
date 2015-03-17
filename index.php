@@ -362,7 +362,7 @@ switch ($path) {
 
     default:
         echo <<<'HTML'
-<h1>pARTout package repository</h1>
+<h1>Basic package repository</h1>
 <p>This is a onepage MODX package repository implementation.</p>
 <h2>Relevant MODX REST calls</h2>
 <ul>
