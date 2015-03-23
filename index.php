@@ -301,7 +301,7 @@ switch ($path) {
         $op["version_minor"] = preg_replace("/([a-zA-Z0-9_]+)-([0-9]+)\\.([0-9]+)\\.([0-9]+)[-]?([a-zA-Z0-9\\.-]+)?/i", "\${3}", $sig);
         $op["version_patch"] = preg_replace("/([a-zA-Z0-9_]+)-([0-9]+)\\.([0-9]+)\\.([0-9]+)[-]?([a-zA-Z0-9\\.-]+)?/i", "\${4}", $sig);
         $relfound = 0;
-        $op["version_release"] = preg_replace("/([a-zA-Z0-9_]+)-([0-9]+)\\.([0-9]+)\\.([0-9]+)[-]?([a-zA-Z0-9\\.-]+)?/i", "\${5}", $sig, -1, &$relfound);
+        $op["version_release"] = preg_replace("/([a-zA-Z0-9_]+)-([0-9]+)\\.([0-9]+)\\.([0-9]+)[-]?([a-zA-Z0-9\\.-]+)?/i", "\${5}", $sig, -1, $relfound);
         if (!$relfound) {
             $op["version_release"] = "";
         }
