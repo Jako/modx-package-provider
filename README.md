@@ -1,4 +1,4 @@
-#One file implementation of MODX Package Provider
+# One file implementation of MODX Package Provider
 
 This repository contains a very basic MODX Package Provider, that uses a config file for each package and shows the latest package version of each package for download.
 
